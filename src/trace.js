@@ -257,6 +257,10 @@ export default {
 
   afterDraw: function(chart) {
 
+    if (!chart.crosshair) {
+      return;
+    }
+
     if (!chart.crosshair.enabled) {
       return;
     }
